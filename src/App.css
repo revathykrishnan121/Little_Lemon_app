@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto auto 1fr;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  /* {} */
+  header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 2em;
+    padding-left: 15em;
+    padding-right: 15em;
+  }
+}
+
+nav {
+  grid-column: 3/span 12;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  flex-wrap: wrap;
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+}
+
+article {
+  background-color: #495E57;
+  padding-left: 15em;
+  padding-right: 15em;
   color: white;
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  gap: 17em;
+
+  section h1:first-child {
+    font-size: 2.7em;
+    color: #F4CE14;
+    margin: 0px;
+    margin-top: 10px;
+  }
+
+  section h2 {
+    margin-top: 0px;
+  }
+
+  section .reserve-table {
+    background-color: #F4CE14;
+    padding: 1em 1.5em;
+    border: 0px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: bold;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  padding-left: 15em;
+  padding-right: 15em;
+  padding-bottom: 3em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.sectionHeading {
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+
+  h2 {
+    margin: 0px;
+    font-size: 2em;
   }
-  to {
-    transform: rotate(360deg);
+
+  .online-menu {
+    background-color: #F4CE14;
+    padding: 1em 1.5em;
+    border: 0px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: bold;
   }
+}
+
+.sectionContent {
+  display: flex;
+  gap: 2em;
+
+  div {
+    background-color: #EDEFEE;
+  }
+}
+
+.details {
+  padding: 1em;
+
+  div {
+    padding-bottom: 2em;
+    padding-top: 3em;
+  }
+}
+
+figcaption {
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    color: #EE9972;
+  }
+}
+
+.reserve-table-container{
+  padding-left: 15em;
+    padding-right: 15em;
 }
