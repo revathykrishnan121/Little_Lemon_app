@@ -7,7 +7,7 @@ function Main() {
     <main>
       <section className="sectionHeading">
         <h2>This Week Specials!</h2>
-        <button type="button" className="online-menu">Online Menu</button>
+        <button type="button" className="button-style">Online Menu</button>
       </section>
       <section className="sectionContent">
         <FoodCard imageName={greekSalad} dishName="Greek Salad" rate="$12.99" details="The famous greek salad of crispy lettuce, peppers, olives and our chicago style feta cheese garnished with crunchy garlic and rosemary croutons"></FoodCard>

@@ -46,16 +46,7 @@ article {
   section h2 {
     margin-top: 0px;
   }
-
-  section .reserve-table {
-    background-color: #F4CE14;
-    padding: 1em 1.5em;
-    border: 0px;
-    border-radius: 16px;
-    font-size: 14px;
-    font-weight: bold;
-  }
-}
+ }
 
 main {
   padding-left: 15em;
@@ -74,15 +65,7 @@ main {
     font-size: 2em;
   }
 
-  .online-menu {
-    background-color: #F4CE14;
-    padding: 1em 1.5em;
-    border: 0px;
-    border-radius: 16px;
-    font-size: 14px;
-    font-weight: bold;
   }
-}
 
 .sectionContent {
   display: flex;
@@ -111,7 +94,21 @@ figcaption {
   }
 }
 
+.button-style{
+  background-color: #F4CE14;
+  padding: 1em 1.5em;
+  border: 0px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: bold;
+  }
 .reserve-table-container{
   padding-left: 15em;
     padding-right: 15em;
+}
+.field{
+  padding:10px;
+  label{
+    margin-right:2em;
+  }
 }

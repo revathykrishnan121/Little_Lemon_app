@@ -11,7 +11,7 @@ function Article() {
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>
         <p>We are family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-        <button type="button" className="reserve-table" onClick={reserveTable}>Reserve a Table</button>
+        <button type="button" className="button-style" onClick={reserveTable} aria-label="On Click">Reserve a Table</button>
       </section>
       <picture>
         <img src={restauranfood} alt="restauranfood" width="250" height="280"></img>
